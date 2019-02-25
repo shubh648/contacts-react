@@ -1,0 +1,219 @@
+@media screen and (min-width: 1023px) {
+    .add-contact {
+      height: 600px !important;
+    }
+  }
+
+  @media screen and (min-width: 692px) {
+      .form input{
+        width: 250px !important;
+      }
+    }
+  
+  .add-contact {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      color: #003300;
+      position: relative;
+    }
+    /* .add-contact header {
+      width: 100%;
+      height: 200px;
+    }
+    .add-contact header .image {
+      margin: 0;
+      height: 150px;
+      width: 150px;
+      border-radius: 50%;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: lightgrey;
+    } */
+    .add-contact header {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .add-contact header .image {
+      height: 150px;
+      width: 150px;
+      border-radius: 50%;
+      background-size: cover;
+      background-color: lightgrey;
+    }
+    .camera-icon{
+      top: 50%;
+      left: 50%;
+      transform: translate(115%, -400%);
+      position: relative;
+      font-size: 30px;
+      cursor: pointer;
+    }
+    .add-contact header .image::before {
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 50%;
+      padding: 55px;
+      box-sizing: border-box;
+      content: '\f095';
+      color: #001C00;
+      font-size: 50px;
+      font-family: 'FontAwesome';
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+    
+    .form {
+      flex: 1.4;
+      padding: 15px;
+      font-size: 14px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .form input{
+        height: 35px;
+        width: auto;
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+
+    .field{
+        margin-bottom: 20px;
+    }
+  
+    .add-awesome_logo{
+      flex: 1;
+      display: flex;
+      width: 95%;
+    }
+    .field .awesome_icon_fa{
+      font-size: 20px;
+      width: 20px;
+      color: rgb(69, 69, 228);
+      margin: auto;
+      margin-right: 10px;
+    }
+
+    .close-icon{
+      font-size: 40px;
+      cursor: pointer;
+      color: red !important;
+      margin: auto 20px 30px;
+    }
+
+    .submit-button{
+      margin: auto 20px 30px;
+      padding: 0;
+      border: none;
+      background: transparent;
+    }
+
+    .check-icon{
+      font-size: 40px;
+      cursor: pointer;
+      color: rgb(69, 69, 228);
+    }
+
+    .phone-icon{
+        transform: rotate(90deg);
+    }
+
+    /*no need*/
+    /* .avatar{
+      position: relative;
+      display: inline-block;
+      top: -33px;
+      left: 66px;
+      background-color: chocolate;
+    }
+    .avatar_mode{
+      cursor: pointer;
+    } */
+
+    @media screen and (min-width: 461px) and (max-width: 612px) {
+      .video-container{
+        width: 230px !important;
+        height: 230px !important;
+      }
+  
+      .videostream{
+        height: 230px !important;
+      }
+    }
+
+    .screenshot{
+      height: 100%;
+    }
+
+    .video-container{
+      border-radius: 50%;
+      width: 300px;
+      height: 300px;
+      display: inline-flex;
+      overflow: hidden;
+      margin-top: 15px;
+    }
+
+    .image {
+      background-size: cover;
+      background-position-x: center;
+      position: relative;
+    }
+
+    .camera-button-container{
+      bottom: 20%;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+    }
+
+    .screenshot-button{
+      padding: 0;
+      background: transparent;
+      border: none;
+    }
+
+    .camera-click{
+      font-size: 50px;
+      color: lavenderblush;
+    }
+
+    .videostream{
+      width: auto;
+      height: 300px;
+      left: 50%;
+      position: relative;
+      transform: translate(-50%);
+    }
+
+    .screenshot-img{
+      width: auto;
+      height: 300px;
+      left: 50%;
+      position: relative;
+      transform: translate(-50%);
+    }
+
+    .overlay {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      z-index: 3;
+      top: 0;
+      /* left: 0; */
+      background: #111;
+      /* opacity: 0.8; */
+      overflow-y: auto;
+      overflow-x: hidden;
+      text-align: center;
+      transition: 0.5s;
+    }

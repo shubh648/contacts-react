@@ -1,0 +1,11 @@
+.app {
+  height: 100vh;
+  width: auto;
+  display: flex;
+  border: solid 2px #001C00;
+}
+
+.right {
+  background: #EDF1BE;
+  flex: 1;
+}

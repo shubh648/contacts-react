@@ -1,0 +1,100 @@
+{
+   "contacts": [
+        {
+          "id": 0,
+          "name": "Mary Margaret Blanchard",
+          "phone": "555-1234",
+          "email": "snowwhite@ouatmail.com",
+          "image": "http://assets.wornon.tv/uploads/2012/03/s01e05-marys-brown-coat-over-teal-skirt-yellow-flatsb.jpg",
+          "isActive": true
+        }, 
+        {
+          "id": 1,
+          "name": "David Nolan",
+          "phone": "555-9876",
+          "email": "princecharming@ouatmail.com",
+          "image": "http://cdn.playbuzz.com/cdn/e6516fc7-27c5-4798-8097-3553691017a2/5cab9b6e-6a4c-4bda-90fe-c8af89826b03.jpg",
+          "isActive": false
+        },
+        {
+          "id": 2,
+          "name": "Emma Swan",
+          "phone": "555-2345",
+          "email": "thesavior@ouatmail.com",
+          "image": "https://a.wattpad.com/cover/4106257-368-k161010.jpg",
+          "isActive": false
+        },
+        {
+          "id": 3,
+          "name": "Regina Mills",
+          "phone": "555-6667",
+          "email": "evilqueen@ouatmail.com",
+          "image": "https://s-media-cache-ak0.pinimg.com/originals/11/d3/e9/11d3e91be6df715f88d543374c039e1d.jpg",
+          "isActive": false
+        }, 
+        {
+          "id": 4,
+          "name": "Mr. Gold",
+          "phone": "555-4653",
+          "email": "rumplestiltskin@ouatmail.com",
+          "image": "http://happynicetimepeoplecom.c.presscdn.com/wp-content/uploads/2014/09/Boardwalk-Empire-maybe.jpg",
+          "isActive": false
+        },
+        {
+          "id": 5,  
+          "name": "Regina Mills",
+            "phone": "555-6667",
+            "email": "evilqueen@ouatmail.com",
+            "image": "https://s-media-cache-ak0.pinimg.com/originals/11/d3/e9/11d3e91be6df715f88d543374c039e1d.jpg",
+            "isActive": false
+          }, 
+          {
+            "id": 6,
+            "name": "Mr. Gold",
+            "phone": "555-4653",
+            "email": "rumplestiltskin@ouatmail.com",
+            "image": "http://happynicetimepeoplecom.c.presscdn.com/wp-content/uploads/2014/09/Boardwalk-Empire-maybe.jpg",
+            "isActive": false
+          },
+          {
+            "id": 7,
+            "name": "Regina Mills",
+            "phone": "555-6667",
+            "email": "evilqueen@ouatmail.com",
+            "image": "https://s-media-cache-ak0.pinimg.com/originals/11/d3/e9/11d3e91be6df715f88d543374c039e1d.jpg",
+            "isActive": false
+          }, 
+          {
+            "id": 8,
+            "name": "Mr. Gold",
+            "phone": "555-4653",
+            "email": "rumplestiltskin@ouatmail.com",
+            "image": "http://happynicetimepeoplecom.c.presscdn.com/wp-content/uploads/2014/09/Boardwalk-Empire-maybe.jpg",
+            "isActive": false
+          }, 
+          {
+            "id": 9,
+            "name": "Mr. Gold",
+            "phone": "555-4653",
+            "email": "rumplestiltskin@ouatmail.com",
+            "image": "http://happynicetimepeoplecom.c.presscdn.com/wp-content/uploads/2014/09/Boardwalk-Empire-maybe.jpg",
+            "isActive": false
+          }, 
+          {
+            "id": 10,
+            "name": "Mr. Gold",
+            "phone": "555-4653",
+            "email": "rumplestiltskin@ouatmail.com",
+            "image": "http://happynicetimepeoplecom.c.presscdn.com/wp-content/uploads/2014/09/Boardwalk-Empire-maybe.jpg",
+            "isActive": false
+          }, 
+          {
+            "id": 11,
+            "name": "Shubham Gupta",
+            "phone": "555-4653",
+            "email": "rumplestiltskin@ouatmail.com",
+            "image": "http://happynicetimepeoplecom.c.presscdn.com/wp-content/uploads/2014/09/Boardwalk-Empire-maybe.jpg",
+            "isActive": false
+          }
+      ]
+}
