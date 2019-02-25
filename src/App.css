@@ -1,11 +1,12 @@
 .app {
-  height: 100vh;
+  height: calc(100vh - 8px);
   width: auto;
   display: flex;
-  border: solid 2px #001C00;
+  border: solid 4px #001C00;
 }
 
 .right {
-  background: #EDF1BE;
+  /* background: #EDF1BE; */
   flex: 1;
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }

@@ -3,7 +3,8 @@ import './AddContact.css'
 import {connect} from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPhone, faEnvelope, faUser, faCheck, faTimes, faCamera } from '@fortawesome/free-solid-svg-icons'
+import { faCamera } from '@fortawesome/free-solid-svg-icons'
+import { GetForm } from './AddComponents';
 
 class AddContact extends Component {
   handleSearchBar = ()=>{
@@ -53,7 +54,6 @@ class AddContact extends Component {
     this.props.addToState({cameraClicked:true});
 
     if (this.hasGetUserMedia) {
-      // Good to go!
       const constraints = {
         video: true
         };
@@ -86,8 +86,6 @@ class AddContact extends Component {
     canvas.height = this.video.videoHeight;
     this.video.style.display = 'none'
 	  canvas.getContext('2d').drawImage(this.video, 0, 0);
-	  // Other browsers will fall back to image/png
-		console.log(canvas.toDataURL());
     let src = canvas.toDataURL('image/webp');
     this.img.className="image video-container"
     this.img.style.backgroundImage = 'url(' +src+ ')';
@@ -117,7 +115,6 @@ class AddContact extends Component {
                 </div>
               
                 <div className="camera-button-container">
-
                   <button ref={screenshotButton => {this.screenshotButton = screenshotButton}} id="screenshot-button" className="screenshot-button" disabled="" onClick={this.takeScreenShot}>
                     <FontAwesomeIcon className="camera-click" icon={faCamera} onClick={this.takeScreenShot} />                  
                   </button>
@@ -126,27 +123,11 @@ class AddContact extends Component {
             </div>
             ):""
             }
-          <form className="form" onSubmit={this.addContact}>
-            <div className="field">
-              <FontAwesomeIcon className="awesome_icon_fa" icon={faUser} />
-              <input id='name' name='name' type="text" defaultValue={(this.props.item)?(""+this.props.item.name+""):null} placeholder="Name" autoFocus/>
-            </div>
-            <div className="field">
-              <FontAwesomeIcon className="awesome_icon_fa phone-icon" icon={faPhone} />
-              <input id='phone' name='phone' type="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" defaultValue={(this.props.item)?this.props.item.phone:null} placeholder="Phone"/>
-            </div>
-            <div className="field">
-              <FontAwesomeIcon className="awesome_icon_fa" icon={faEnvelope} />
-              <input id='email' name='email' type="email" defaultValue={(this.props.item)?this.props.item.email:null} placeholder="Email"/>
-            </div>
-            <div className="add-awesome_logo">
-              <FontAwesomeIcon className="close-icon" onClick={this.closeClick} icon={faTimes} />
-              <div className="space"></div>
-              <button className="submit-button" type="submit">
-                <FontAwesomeIcon className="check-icon" icon={faCheck} />
-              </button>
-            </div>
-          </form>
+          <GetForm 
+          addContact ={this.addContact}
+          item = {this.props.item}
+          closeClick = {this.closeClick}
+          />
         </div>
       </div>
     )

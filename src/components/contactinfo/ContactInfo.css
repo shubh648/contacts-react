@@ -8,7 +8,7 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    color: #003300;
+    color: wheat;
   }
   .contact-info header {
     flex: 1;
@@ -31,11 +31,13 @@
   .contact-info header h3 {
     margin: 0;
     text-align: center;
+    color: wheat;
+    font-size: 25px;
   }
   .contact-info section {
     flex: 1;
     padding: 15px;
-    font-size: 14px;
+    font-size: 16px;
   }
   .contact-info section p > span:nth-child(1) {
     text-decoration: underline;
