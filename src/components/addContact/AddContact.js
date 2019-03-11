@@ -7,6 +7,7 @@ import { faCamera } from '@fortawesome/free-solid-svg-icons'
 import { GetForm } from './AddComponents';
 
 class AddContact extends Component {
+  stream = {};
   handleSearchBar = ()=>{
     this.props.addToState({searchBarOpen:false});
   }
@@ -25,17 +26,18 @@ class AddContact extends Component {
     e.preventDefault();
     if(e.target.name.value && e.target.phone.value && e.target.email.value)
     {
+      let image = this.getImage()
       let contacts= {
         name:e.target.name.value,
         phone:e.target.phone.value,
         email:e.target.email.value,
       }
-      if(this.getImage){
-        contacts.image=this.getImage();
+      if(image){
+        contacts.image=image;
         localStorage.removeItem('image')
       }
       if(this.props.item){
-        if(this.props.item.image){
+        if(image===null && this.props.item.image){
           contacts.image = this.props.item.image;
         }
         contacts.id = this.props.item.id;
@@ -75,6 +77,7 @@ class AddContact extends Component {
   }
   
   handleSuccess=(stream)=> {
+    this.stream = stream;
     this.screenshotButton.disabled = false;
     this.video.style.display = 'block'
 	  this.video.srcObject = stream;
@@ -92,6 +95,10 @@ class AddContact extends Component {
     this.addImg.style.backgroundImage = 'url(' +src+ ')';
     localStorage.setItem("image", src);    
     this.props.addToState({cameraClicked:false});
+    this.stream.getTracks().forEach(track=>{
+      track.stop()
+    })
+
   }
 
   render() {
